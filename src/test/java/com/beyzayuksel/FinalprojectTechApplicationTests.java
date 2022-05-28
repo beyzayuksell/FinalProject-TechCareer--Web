@@ -13,7 +13,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class FinalprojectTechApplicationTests implements ITestData {
+class FinalprojectTechApplicationTests {
+/* class FinalprojectTechApplicationTests implements ITestData
 
     // JUNIT Tests
 
@@ -71,4 +72,6 @@ class FinalprojectTechApplicationTests implements ITestData {
         // istenilen data yoksa: No class com.beyzayuksel.data.entity.BookEntity entity with id 1 exists!
         assertThat(bookRepository.existsById(1L)).isFalse();
     }
+
+ */
 }
