@@ -1,3 +1,10 @@
+#gitigore projeyi push'larken eklemek istemediğimiz dosyaları yazdığımız yerdir.
+#special code
+log
+memory_persist
+frontend/node_modules
+
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
