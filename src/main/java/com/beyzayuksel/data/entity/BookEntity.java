@@ -10,6 +10,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+// LOMBOK lib
 @Data
 @NoArgsConstructor
 @Builder
@@ -18,7 +19,7 @@ import java.util.Date;
 @Table(name = "books")
 public class BookEntity extends BaseEntity implements Serializable {
 
-    public final long serialVersionUID = 1L;
+    public final static long serialVersionUID = 1L;
 
     @Column(name = "book_title")
     private String bookTitle;

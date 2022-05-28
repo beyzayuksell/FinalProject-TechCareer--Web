@@ -12,6 +12,7 @@ public class AuditorAwareBean {
 
     @Bean
     public AuditorAware<String> auditorAware(){
+
         return new AuditorAwareImpl();
     }
 

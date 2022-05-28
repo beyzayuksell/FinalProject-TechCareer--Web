@@ -18,10 +18,10 @@ public interface BookServices {
     public List<BookDto> getAllBooks();
 
     // filter: find book
-    public ResponseEntity<BookDto> getBookById(Long id);
+    public ResponseEntity<BookDto> getBookById(Long id) throws Throwable;
 
     // update
-    public ResponseEntity<BookDto> updateBook(Long id, BookDto bookDto);
+    public ResponseEntity<BookDto> updateBook(Long id, BookDto bookDto) throws Throwable;
 
     // delete
     public ResponseEntity<Map<String, Boolean>> deleteBook(Long id);

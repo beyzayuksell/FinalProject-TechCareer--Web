@@ -40,7 +40,7 @@ public class BookRest implements IBookRest {
     // LIST
     // http://localhost:8080/api/v1/books
     @Override
-    @GetMapping("/employees")
+    @GetMapping("/books")
     public List<BookDto> getAllBooks() {
         List<BookDto> list = bookServices.getAllBooks();
         return list;

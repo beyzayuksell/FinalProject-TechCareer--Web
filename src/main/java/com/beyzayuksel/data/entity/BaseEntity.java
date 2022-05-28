@@ -19,6 +19,7 @@ import java.util.Date;
 @MappedSuperclass
 @Getter
 @Setter
+
 //Audit tanıtmak
 @EntityListeners(AuditingEntityListener.class)
 //audit - kim, ne zaman database içinde bir tabloyu güncellenmiş,
@@ -26,7 +27,7 @@ import java.util.Date;
 // gibi log bilgilerini tutan yapıdır.
 //Json pars için işlem yapılmasına izin vermemek, takip edilmesi istenmeyen attribute lar eklenir
 @JsonIgnoreProperties(value={"created_date,update_date"},allowGetters = true)
-public class BaseEntity {
+abstract public class BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,7 +43,7 @@ public class BaseEntity {
     //Kim ne zaman ekledi
     @Column(name="created_date")
     @CreatedDate
-    public java.util.Date createdDate;
+    public Date createdDate;
 
     //Kim guncelledi
     @Column(name="updated_by")
@@ -52,11 +53,11 @@ public class BaseEntity {
     //Kim ne zaman gucelledi
     @Column(name="update_date")
     @LastModifiedDate
-    public java.util.Date updateDate;
+    public Date updateDate;
 
 
     @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
-    @Column(name="created_date", updatable = false)
+    @Column(name="system_created_date", updatable = false)
     private Date date;
 }

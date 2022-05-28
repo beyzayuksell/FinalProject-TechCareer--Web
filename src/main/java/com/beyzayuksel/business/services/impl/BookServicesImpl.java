@@ -33,6 +33,7 @@ public class BookServicesImpl implements BookServices {
     //save
     //http://localhost:8080/save/books
     @Override
+    @PostMapping("/save/books")
     public BookDto createBook(@RequestBody BookDto bookDto) {
         BookEntity entity = DtoToEntity(bookDto);
         bookRepository.save(entity);
@@ -56,9 +57,9 @@ public class BookServicesImpl implements BookServices {
 
     // filter:find
     // http://localhost:8080/find/books/2
-    @GetMapping("/find/books/{id}")
     @Override
-    public ResponseEntity<BookDto> getBookById(Long id) {
+    @GetMapping("/find/books/{id}")
+    public ResponseEntity<BookDto> getBookById(@PathVariable(name="id") Long id) throws Throwable {
         BookEntity entity = bookRepository.
                         findById(id)
                         .orElseThrow(()->new ResourceNotFoundException("Book "+id+" id bulamadı !!!"));
@@ -70,7 +71,7 @@ public class BookServicesImpl implements BookServices {
     // http://localhost:8080/update/books/4
     @Override
     @PutMapping("/update/books/{id}")
-    public ResponseEntity<BookDto> updateBook(Long id, BookDto bookDto) {
+    public ResponseEntity<BookDto> updateBook(@PathVariable(name="id") Long id, @RequestBody BookDto bookDto) throws Throwable {
         //DtoToEntity
         BookEntity entity = DtoToEntity(bookDto);
 
@@ -95,7 +96,7 @@ public class BookServicesImpl implements BookServices {
     //http://localhost:8080/delete/books/1
     @Override
     @DeleteMapping("/delete/books/{id}")
-    public ResponseEntity<Map<String, Boolean>> deleteBook(Long id) {
+    public ResponseEntity<Map<String, Boolean>> deleteBook(@PathVariable(name="id") Long id) {
         // findEntity
         BookEntity bookEntityFind =
                 bookRepository.
@@ -113,13 +114,13 @@ public class BookServicesImpl implements BookServices {
     // EntityToDto
     @Override
     public BookDto EntityToDto(BookEntity bookEntity) {
-        BookDto dto = modelMapper.map(bookEntity,BookDto.class);
+        BookDto dto = modelMapper.map(bookEntity, BookDto.class);
         return dto;
     }
 
     @Override
     public BookEntity DtoToEntity(BookDto bookDto) {
-        BookEntity entity = modelMapper.map(bookDto,BookEntity.class);
+        BookEntity entity = modelMapper.map(bookDto, BookEntity.class);
         return entity;
     }
 }
