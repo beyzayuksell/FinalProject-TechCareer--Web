@@ -1,4 +1,4 @@
-package com.beyzayuksel.dto;
+package com.beyzayuksel.business.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

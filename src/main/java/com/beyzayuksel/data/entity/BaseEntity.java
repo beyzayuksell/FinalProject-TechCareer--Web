@@ -12,6 +12,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 //Her entitynin ortak özelliklerini ana bir class ta birleştirdik.
@@ -23,7 +24,7 @@ import java.util.Date;
 //audit - kim, ne zaman database içinde bir tabloyu güncellenmiş,
 // tablodan sisteme birşey eklemiş, hangi user ile yapmış, ..
 // gibi log bilgilerini tutan yapıdır.
-//Json pars için işlem yapılmasına izin vermemek
+//Json pars için işlem yapılmasına izin vermemek, takip edilmesi istenmeyen attribute lar eklenir
 @JsonIgnoreProperties(value={"created_date,update_date"},allowGetters = true)
 public class BaseEntity {
 
