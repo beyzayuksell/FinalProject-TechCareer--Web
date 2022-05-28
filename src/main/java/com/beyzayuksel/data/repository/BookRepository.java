@@ -30,6 +30,8 @@ public interface BookRepository extends JpaRepository<BookEntity, Long> {
     public ResponseEntity<Map<String, Boolean>> deleteBook(Long id);
 
     // Model Mapper: DTO to Entity
+    // Amaç: Bilgi Güvenliği
+    // User lar dışardan direk verilere erişememesi için.
     public BookDto EntityToDto(BookEntity bookEntity);
     public BookEntity DtoToEntity(BookDto bookDto);
 
