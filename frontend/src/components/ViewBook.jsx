@@ -69,7 +69,7 @@ export default class ViewBook extends Component {
               eşyasını alır ve kimseye görünmeden oradan ayrılır.{" "}
             </p>
 
-            <a href="#" class="btn btn-primary">
+            <a href="/" class="btn btn-primary">
               Detaylı Bilgi İçin Tıklayınız
             </a>
             <button

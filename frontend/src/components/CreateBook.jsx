@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import BookService from "../services/BookService";
+import { Card, Form, Button } from "react-bootstrap";
 
 class UpdateBook extends Component {
   constructor(props) {
@@ -81,40 +82,49 @@ class UpdateBook extends Component {
               <h3 className="text-center">
                 <i className="fa-solid fa-plus"></i> Kitap Ekle
               </h3>
-              <div className="card-body">
-                <form>
-                  <div className="form-group">
+              <Card.Body>
+                <Form>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
                     <i className="fa-solid fa-book"></i>{" "}
-                    <label> Kitap Adı: </label>
-                    <input
+                    <Form.Label> Kitap Adı: </Form.Label>
+                    <Form.Control
+                      type="text"
                       placeholder="Kitap Adı Giriniz"
                       name="bookTitle"
                       className="form-control"
                       value={this.state.bookTitle}
                       onChange={this.changeBookTitleHandler}
                     />
-                  </div>
-                  <div className="form-group">
-                    <i className="fa-solid fa-user"></i> <label> Yazar: </label>
-                    <input
+                    <Form.Text className="text-muted"></Form.Text>
+                  </Form.Group>
+
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <i className="fa-solid fa-user"></i>{" "}
+                    <Form.Label> Yazar: </Form.Label>
+                    <Form.Control
+                      type="text"
                       placeholder="Yazarı Giriniz"
                       name="bookAuthor"
                       className="form-control"
                       value={this.state.bookAuthor}
                       onChange={this.changeBookAuthorHandler}
                     />
-                  </div>
-                  <div className="form-group">
+                    <Form.Text className="text-muted"></Form.Text>
+                  </Form.Group>
+
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
                     <i className="fa-solid fa-calendar"></i>{" "}
-                    <label> Yayın Yılı: </label>
-                    <input
+                    <Form.Label> Yayın Yılı: </Form.Label>
+                    <Form.Control
+                      type="text"
                       placeholder="Yayın Yılını Giriniz"
                       name="bookPublishedYear"
                       className="form-control"
                       value={this.state.bookPublishedYear}
                       onChange={this.changeBookPublishedYearHandler}
                     />
-                  </div>
+                    <Form.Text className="text-muted"></Form.Text>
+                  </Form.Group>
                   <br />
 
                   <div class="d-flex justify-content-center">
@@ -133,8 +143,8 @@ class UpdateBook extends Component {
                       Geri
                     </button>
                   </div>
-                </form>
-              </div>
+                </Form>
+              </Card.Body>
             </div>
           </div>
         </div>
