@@ -21,10 +21,10 @@ function App() {
         <div className="container">
           <Switch>
             <Route path="/" exact component={ListBook}></Route>
-            <Route path="/kitaplar" component={ListBook}></Route>
-            <Route path="/kitap-ekle/:id" component={CreateBook}></Route>
-            <Route path="/kitap-incele/:id" component={ViewBook}></Route>
-            <Route path="/kitap-güncelle/:id" component={UpdateBook}></Route>
+            <Route path="/books" component={ListBook}></Route>
+            <Route path="/add-book/:id" component={CreateBook}></Route>
+            <Route path="/view-book/:id" component={ViewBook}></Route>
+            <Route path="/update-book/:id" component={UpdateBook}></Route>
             <Route path="/kayıt" component={Register}></Route>
             <Route path="/giriş" component={Login}></Route>
           </Switch>

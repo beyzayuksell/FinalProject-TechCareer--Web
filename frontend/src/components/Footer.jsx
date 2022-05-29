@@ -12,11 +12,20 @@ export default function FooterComponent() {
   return (
     <Navbar fixed="bottom" bg="dark" variant="dark">
       <Container>
-        <Col lg={12} className="text-center text-muted">
+        <Col lg={2} className="text-center text-muted">
           <div>
             {fullYear}-{fullYear + 1}, Beyza Yüksel
           </div>
         </Col>
+
+        <form className="d-flex my-2 my-lg-0">
+          <button
+            className="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+          >
+            Beyza Yüksel CV
+          </button>
+        </form>
       </Container>
     </Navbar>
   );

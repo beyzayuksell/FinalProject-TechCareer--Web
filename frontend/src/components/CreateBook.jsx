@@ -122,7 +122,7 @@ class UpdateBook extends Component {
                       className="btn btn-success"
                       onClick={this.saveOrUpdateBook}
                     >
-                      Save
+                      Kaydet
                     </button>
                     <button
                       className="btn btn-danger"
@@ -130,7 +130,7 @@ class UpdateBook extends Component {
                       style={{ marginLeft: "10px" }}
                     >
                       {" "}
-                      Cancel
+                      Geri
                     </button>
                   </div>
                 </form>
