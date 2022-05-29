@@ -37,7 +37,7 @@ public class BookServicesImpl implements BookServices {
     public BookDto createBook(@RequestBody BookDto bookDto) {
         BookEntity entity = DtoToEntity(bookDto);
         bookRepository.save(entity);
-        log.info("Book kaydedildi.");
+        log.info("Book saved.");
         return bookDto;
     }
 
@@ -62,7 +62,7 @@ public class BookServicesImpl implements BookServices {
     public ResponseEntity<BookDto> getBookById(@PathVariable(name="id") Long id) throws Throwable {
         BookEntity entity = bookRepository.
                         findById(id)
-                        .orElseThrow(()->new ResourceNotFoundException("Book "+id+" id bulamadı !!!"));
+                        .orElseThrow(()->new ResourceNotFoundException("Book "+id+" is not found !!!"));
         BookDto dto = EntityToDto(entity);
         return ResponseEntity.ok(dto);
     }
@@ -79,7 +79,7 @@ public class BookServicesImpl implements BookServices {
         BookEntity entityFind =
                 bookRepository.
                         findById(id)
-                        .orElseThrow(()->new ResourceNotFoundException("Book "+id+" id bulamadı !!!"));
+                        .orElseThrow(()->new ResourceNotFoundException("Book "+id+" is not found !!!"));
 
         //setEntity
         entityFind.setBookTitle(entity.getBookTitle());
@@ -101,11 +101,11 @@ public class BookServicesImpl implements BookServices {
         BookEntity bookEntityFind =
                 bookRepository.
                 findById(id).
-                orElseThrow( () -> new ResourceNotFoundException("Book "+id+" id bulamadı !!!") );
+                orElseThrow( () -> new ResourceNotFoundException("Book "+id+" id is not found !!!") );
 
         bookRepository.delete(bookEntityFind);
         Map<String, Boolean> response = new HashMap<>();
-        response.put("Silindi", Boolean.TRUE);
+        response.put("Book Deleted.", Boolean.TRUE);
         return ResponseEntity.ok(response);
     }
 
