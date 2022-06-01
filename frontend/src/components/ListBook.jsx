@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import BookService from "../services/BookService";
-import { Table, Button, ButtonGroup } from "react-bootstrap";
+import { Table, Button, ButtonGroup, Form, FormControl } from "react-bootstrap";
 
 class ListBook extends Component {
   // constructor
@@ -31,7 +31,6 @@ class ListBook extends Component {
   updateBook(id) {
     this.props.history.push(`/update-book/${id}`);
   }
-
   // Delete
   deleteBook(id) {
     BookService.deleteBook(id).then((res) => {
@@ -53,6 +52,18 @@ class ListBook extends Component {
   render() {
     return (
       <div>
+        <Form className="d-flex">
+          <FormControl
+            type="search"
+            placeholder="Bulmak İstediğiniz Kitabı Giriniz"
+            className="me-2"
+            aria-label="Search"
+          />
+          <Button>
+            <i className="fa-solid fa-search"></i>
+          </Button>
+        </Form>
+        <br />
         <Table striped bordered hover variant="dark">
           <thead>
             <tr>

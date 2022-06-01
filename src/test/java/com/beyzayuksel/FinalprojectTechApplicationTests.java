@@ -13,8 +13,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class FinalprojectTechApplicationTests {
-/* class FinalprojectTechApplicationTests implements ITestData
+//class FinalprojectTechApplicationTests {
+ class FinalprojectTechApplicationTests implements ITestData {
 
     // JUNIT Tests
 
@@ -26,9 +26,9 @@ class FinalprojectTechApplicationTests {
     @Test
     public void testCreate() {
         BookEntity entity = new BookEntity();
-        entity.setBookTitle("Suç ve Ceza");
-        entity.setBookAuthor("Dostoyevski");
-        entity.setBookPublishedYear("1884");
+        entity.setBookTitle("Yakut Kırmızısı");
+        entity.setBookAuthor("Kerstin Gier");
+        entity.setBookPublishedYear("2010");
         bookRepository.save(entity);
         // eger: 1 id'li data'yı bulamazsa Exception fırlat: java.util.NoSuchElementException: No value present
         assertNotNull(bookRepository.findById(1L).get());
@@ -73,5 +73,5 @@ class FinalprojectTechApplicationTests {
         assertThat(bookRepository.existsById(1L)).isFalse();
     }
 
- */
+
 }

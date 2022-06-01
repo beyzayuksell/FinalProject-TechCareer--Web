@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import { Navbar, Container, Col } from "react-bootstrap";
 
 export default function FooterComponent() {
@@ -23,7 +22,7 @@ export default function FooterComponent() {
             className="btn btn-outline-success my-2 my-sm-0"
             type="submit"
           >
-            Beyza Yüksel CV
+            Beyza Yüksel Cv
           </button>
         </form>
       </Container>

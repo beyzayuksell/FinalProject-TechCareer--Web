@@ -1,142 +1,771 @@
-2022-05-29 01:18:30.907  INFO 20432 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 20432 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
-2022-05-29 01:18:30.917  INFO 20432 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-05-29 01:18:31.128  INFO 20432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-29 01:18:31.130  INFO 20432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-29 01:18:34.522  INFO 20432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-29 01:18:34.637  INFO 20432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 1 JPA repository interfaces.
-2022-05-29 01:18:35.933  INFO 20432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-29 01:18:35.950  INFO 20432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-29 01:18:35.952  INFO 20432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-05-29 01:18:36.117  INFO 20432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-29 01:18:36.118  INFO 20432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4972 ms
-2022-05-29 01:18:36.518  INFO 20432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-29 01:18:36.884  INFO 20432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-29 01:18:36.899  INFO 20432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
-2022-05-29 01:18:37.217  INFO 20432 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-05-29 01:18:37.323  INFO 20432 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-05-29 01:18:38.406  INFO 20432 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-05-29 01:18:38.637  INFO 20432 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-05-29 01:18:39.703  INFO 20432 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-05-29 01:18:39.720  INFO 20432 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-29 01:18:40.558  WARN 20432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-29 01:18:40.901  INFO 20432 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-05-29 01:18:43.379  INFO 20432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-29 01:18:43.389  INFO 20432 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-05-29 01:18:43.506  INFO 20432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-29 01:18:43.557  INFO 20432 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 13.677 seconds (JVM running for 18.678)
-2022-05-29 01:18:56.088  INFO 20432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-29 01:18:56.089  INFO 20432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-29 01:18:56.096  INFO 20432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2022-05-29 02:19:34.433  INFO 20432 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-05-29 02:19:34.447  INFO 20432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-05-29 02:19:34.562  INFO 20432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-05-29 07:52:16.181  INFO 12196 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 12196 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
-2022-05-29 07:52:16.184  INFO 12196 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-05-29 07:52:16.311  INFO 12196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-29 07:52:16.312  INFO 12196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-29 07:52:18.545  INFO 12196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-29 07:52:18.623  INFO 12196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
-2022-05-29 07:52:19.555  INFO 12196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-29 07:52:19.570  INFO 12196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-29 07:52:19.570  INFO 12196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-05-29 07:52:19.680  INFO 12196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-29 07:52:19.695  INFO 12196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3381 ms
-2022-05-29 07:52:19.867  INFO 12196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-29 07:52:20.098  INFO 12196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-29 07:52:20.111  INFO 12196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
-2022-05-29 07:52:20.306  INFO 12196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-05-29 07:52:20.399  INFO 12196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-05-29 07:52:20.649  INFO 12196 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-05-29 07:52:20.806  INFO 12196 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-05-29 07:52:21.677  INFO 12196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-05-29 07:52:21.687  INFO 12196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-29 07:52:22.397  WARN 12196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-29 07:52:22.636  INFO 12196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-05-29 07:52:24.208  INFO 12196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-29 07:52:24.215  INFO 12196 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-05-29 07:52:24.305  INFO 12196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-29 07:52:24.330  INFO 12196 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 8.987 seconds (JVM running for 13.173)
-2022-05-29 07:52:39.046  INFO 12196 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-29 07:52:39.047  INFO 12196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-29 07:52:39.053  INFO 12196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-05-29 08:30:56.734  INFO 12196 --- [http-nio-8080-exec-8] c.b.b.services.impl.BookServicesImpl     : Book saved.
-2022-05-29 09:10:54.806  WARN 12196 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:10:55.354  WARN 12196 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:10:55.409  WARN 12196 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:11:05.255  WARN 12196 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:11:05.961  WARN 12196 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:11:06.020  WARN 12196 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:11:06.270  WARN 12196 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:15:53.139  WARN 12196 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:15:53.205  WARN 12196 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:15:53.499  WARN 12196 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:15:53.905  WARN 12196 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:15:53.983  WARN 12196 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:15:54.278  WARN 12196 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:15:54.655  WARN 12196 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:15:54.993  WARN 12196 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:19:42.663  WARN 12196 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:19:43.416  WARN 12196 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:19:47.760  WARN 12196 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:19:48.345  WARN 12196 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:19:48.436  WARN 12196 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:19:54.091  WARN 12196 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:19:54.509  WARN 12196 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:19:54.590  WARN 12196 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:17.252  WARN 12196 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:17.698  WARN 12196 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:17.944  WARN 12196 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:18.622  WARN 12196 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:18.700  WARN 12196 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:19.555  WARN 12196 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:19.635  WARN 12196 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:20.934  WARN 12196 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:21.012  WARN 12196 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:23.822  WARN 12196 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:23.894  WARN 12196 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:24.157  WARN 12196 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:24:24.210  WARN 12196 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:31.578  WARN 12196 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:38.135  WARN 12196 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:38.555  WARN 12196 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:38.633  WARN 12196 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:38.868  WARN 12196 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:47.369  WARN 12196 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:47.444  WARN 12196 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:47.711  WARN 12196 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 09:25:50.485  WARN 12196 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
-2022-05-29 11:23:46.505  INFO 12196 --- [http-nio-8080-exec-4] c.b.b.services.impl.BookServicesImpl     : Book saved.
-2022-05-29 11:25:13.136  INFO 12196 --- [http-nio-8080-exec-3] c.b.b.services.impl.BookServicesImpl     : Book saved.
-2022-05-29 14:41:07.686  WARN 12196 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "_add"]
-2022-05-29 14:50:20.273  INFO 12196 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-05-29 14:50:20.304  INFO 12196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-05-29 14:50:20.335  INFO 12196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-05-29 15:03:36.044  INFO 8108 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 8108 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
-2022-05-29 15:03:36.047  INFO 8108 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-05-29 15:03:36.137  INFO 8108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-29 15:03:36.137  INFO 8108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-29 15:03:39.084  INFO 8108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-29 15:03:39.232  INFO 8108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interfaces.
-2022-05-29 15:03:40.483  INFO 8108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-29 15:03:40.514  INFO 8108 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-29 15:03:40.514  INFO 8108 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-05-29 15:03:40.670  INFO 8108 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-29 15:03:40.670  INFO 8108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4533 ms
-2022-05-29 15:03:41.155  INFO 8108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-29 15:03:41.466  INFO 8108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-29 15:03:41.482  INFO 8108 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
-2022-05-29 15:03:41.846  INFO 8108 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-05-29 15:03:41.928  INFO 8108 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
-2022-05-29 15:03:42.328  INFO 8108 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-05-29 15:03:42.495  INFO 8108 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2022-05-29 15:03:44.013  INFO 8108 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-05-29 15:03:44.028  INFO 8108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-29 15:03:44.990  WARN 8108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-29 15:03:45.295  INFO 8108 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-05-29 15:03:47.176  INFO 8108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-29 15:03:47.176  INFO 8108 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-05-29 15:03:47.270  INFO 8108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-29 15:03:47.301  INFO 8108 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 12.105 seconds (JVM running for 15.511)
-2022-05-29 15:03:47.934  INFO 8108 --- [RMI TCP Connection(2)-192.168.0.14] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-29 15:03:47.934  INFO 8108 --- [RMI TCP Connection(2)-192.168.0.14] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-29 15:03:47.938  INFO 8108 --- [RMI TCP Connection(2)-192.168.0.14] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-31 00:00:51.401  INFO 5720 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 00:00:51.729  INFO 5720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 00:00:51.900  INFO 5720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 19:58:37.303  INFO 9860 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 9860 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 19:58:37.303  INFO 9860 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 19:58:37.398  INFO 9860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 19:58:37.398  INFO 9860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 19:58:38.853  WARN 9860 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'passwordEncoder' defined in class path resource [com/beyzayuksel/config/SpringSecurityConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=springSecurityConfig; factoryMethodName=passwordEncoder; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/beyzayuksel/config/SpringSecurityConfig.class]] for bean 'passwordEncoder': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=passwordEncoderBean; factoryMethodName=passwordEncoder; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/beyzayuksel/bean/PasswordEncoderBean.class]] bound.
+2022-05-31 19:58:38.884  INFO 9860 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-31 19:58:38.931 ERROR 9860 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'passwordEncoder', defined in class path resource [com/beyzayuksel/config/SpringSecurityConfig.class], could not be registered. A bean with that name has already been defined in class path resource [com/beyzayuksel/bean/PasswordEncoderBean.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-05-31 20:01:10.539  INFO 10108 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 10108 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:01:10.539  INFO 10108 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:01:10.613  INFO 10108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:01:10.613  INFO 10108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:01:11.641  WARN 10108 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'passwordEncoder' defined in class path resource [com/beyzayuksel/config/SpringSecurityConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=springSecurityConfig; factoryMethodName=passwordEncoder; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/beyzayuksel/config/SpringSecurityConfig.class]] for bean 'passwordEncoder': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=passwordEncoderBean; factoryMethodName=passwordEncoder; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/beyzayuksel/bean/PasswordEncoderBean.class]] bound.
+2022-05-31 20:01:11.657  INFO 10108 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-31 20:01:11.688 ERROR 10108 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'passwordEncoder', defined in class path resource [com/beyzayuksel/config/SpringSecurityConfig.class], could not be registered. A bean with that name has already been defined in class path resource [com/beyzayuksel/bean/PasswordEncoderBean.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-05-31 20:13:02.795  INFO 6344 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 6344 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:13:02.810  INFO 6344 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:13:02.870  INFO 6344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:13:02.870  INFO 6344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:13:03.869  WARN 6344 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'authenticationManagerBean' defined in class path resource [com/beyzayuksel/bean/AuthenticationManagerBean.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=authenticationManagerBean; factoryMethodName=authenticationManagerBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/beyzayuksel/bean/AuthenticationManagerBean.class]] for bean 'authenticationManagerBean': There is already [Generic bean: class [com.beyzayuksel.bean.AuthenticationManagerBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes\com\beyzayuksel\bean\AuthenticationManagerBean.class]] bound.
+2022-05-31 20:13:03.885  INFO 6344 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-31 20:13:03.901 ERROR 6344 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'authenticationManagerBean', defined in class path resource [com/beyzayuksel/bean/AuthenticationManagerBean.class], could not be registered. A bean with that name has already been defined in file [C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes\com\beyzayuksel\bean\AuthenticationManagerBean.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-05-31 20:14:08.774  INFO 9356 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 9356 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:14:08.774  INFO 9356 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:14:08.883  INFO 9356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:14:08.883  INFO 9356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:14:10.052  WARN 9356 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'authenticationManagerBean' defined in class path resource [com/beyzayuksel/bean/AuthenticationManagerBean.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=authenticationManagerBean; factoryMethodName=authenticationManagerBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/beyzayuksel/bean/AuthenticationManagerBean.class]] for bean 'authenticationManagerBean': There is already [Generic bean: class [com.beyzayuksel.bean.AuthenticationManagerBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes\com\beyzayuksel\bean\AuthenticationManagerBean.class]] bound.
+2022-05-31 20:14:10.068  INFO 9356 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-31 20:14:10.099 ERROR 9356 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'authenticationManagerBean', defined in class path resource [com/beyzayuksel/bean/AuthenticationManagerBean.class], could not be registered. A bean with that name has already been defined in file [C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes\com\beyzayuksel\bean\AuthenticationManagerBean.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-05-31 20:21:54.481  INFO 10052 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 10052 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:21:54.481  INFO 10052 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:21:54.571  INFO 10052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:21:54.571  INFO 10052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:21:56.352  INFO 10052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:21:56.461  INFO 10052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:21:57.508  INFO 10052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-31 20:21:57.524  INFO 10052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:21:57.524  INFO 10052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:21:57.664  INFO 10052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:21:57.664  INFO 10052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3093 ms
+2022-05-31 20:21:57.867  INFO 10052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:21:58.149  INFO 10052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:21:58.164  INFO 10052 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:21:58.430  INFO 10052 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:21:58.539  INFO 10052 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:21:58.789  INFO 10052 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:21:58.945  INFO 10052 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:22:00.149  INFO 10052 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:22:00.164  INFO 10052 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:22:00.867  WARN 10052 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret-key' in value "${jwt.secret-key}"
+2022-05-31 20:22:00.867  INFO 10052 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:22:00.883  INFO 10052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:22:00.883  INFO 10052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:22:00.883  INFO 10052 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-31 20:22:00.914  INFO 10052 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-31 20:22:00.977 ERROR 10052 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret-key' in value "${jwt.secret-key}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.beyzayuksel.FinalprojectTechApplication.main(FinalprojectTechApplication.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret-key' in value "${jwt.secret-key}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 22 common frames omitted
+
+2022-05-31 20:28:46.189  INFO 7456 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 7456 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:28:46.194  INFO 7456 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:28:46.268  INFO 7456 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:28:46.268  INFO 7456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:28:46.268  INFO 7456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:28:47.843  INFO 7456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:28:47.952  INFO 7456 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:28:48.749  INFO 7456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-31 20:28:48.764  INFO 7456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:28:48.764  INFO 7456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:28:48.874  INFO 7456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:28:48.874  INFO 7456 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2606 ms
+2022-05-31 20:28:49.093  INFO 7456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:28:49.264  INFO 7456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:28:49.264  INFO 7456 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:28:49.467  INFO 7456 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:28:49.514  INFO 7456 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:28:49.686  INFO 7456 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:28:49.796  INFO 7456 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:28:50.686  INFO 7456 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:28:50.702  INFO 7456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:28:51.249  WARN 7456 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret-key' in value "${jwt.secret-key}"
+2022-05-31 20:28:51.264  INFO 7456 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:28:51.264  INFO 7456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:28:51.264  INFO 7456 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:28:51.264  INFO 7456 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-31 20:28:51.295  INFO 7456 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-31 20:28:51.327 ERROR 7456 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret-key' in value "${jwt.secret-key}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.0.jar:2.7.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.0.jar:2.7.0]
+	at com.beyzayuksel.FinalprojectTechApplication.main(FinalprojectTechApplication.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.0.jar:2.7.0]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret-key' in value "${jwt.secret-key}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.20.jar:5.3.20]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.20.jar:5.3.20]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.20.jar:5.3.20]
+	... 22 common frames omitted
+
+2022-05-31 20:31:35.170  INFO 8536 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 8536 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:31:35.186  INFO 8536 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:31:35.265  INFO 8536 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:31:35.265  INFO 8536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:31:35.265  INFO 8536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:31:36.881  INFO 8536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:31:36.974  INFO 8536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:31:37.802  INFO 8536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-31 20:31:37.802  INFO 8536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:31:37.802  INFO 8536 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:31:37.912  INFO 8536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:31:37.912  INFO 8536 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2647 ms
+2022-05-31 20:31:38.099  INFO 8536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:31:38.280  INFO 8536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:31:38.280  INFO 8536 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:31:38.499  INFO 8536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:31:38.546  INFO 8536 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:31:38.702  INFO 8536 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:31:38.811  INFO 8536 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:31:39.702  INFO 8536 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:31:39.717  INFO 8536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:31:40.499  WARN 8536 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:31:40.702  INFO 8536 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:31:42.042  INFO 8536 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:31:42.089  INFO 8536 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a46a13d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d73f8cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@26e35d77, org.springframework.security.web.header.HeaderWriterFilter@5f97357c, org.springframework.web.filter.CorsFilter@3f5bd4ca, org.springframework.security.web.authentication.logout.LogoutFilter@7ef77060, com.beyzayuksel.config.JwtTokenFilter@7f5a5633, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12c159c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62845750, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40aa4fac, org.springframework.security.web.session.SessionManagementFilter@4f821102, org.springframework.security.web.access.ExceptionTranslationFilter@373edc3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b138fc9]
+2022-05-31 20:31:42.667  INFO 8536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:31:42.730  INFO 8536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/rest'
+2022-05-31 20:31:42.745  INFO 8536 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 8.348 seconds (JVM running for 10.327)
+2022-05-31 20:32:36.746  INFO 8536 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:32:36.746  INFO 8536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:32:36.762  INFO 8536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:33:27.869  INFO 7360 --- [main] c.b.FinalprojectTechApplicationTests     : Starting FinalprojectTechApplicationTests using Java 17.0.2 on DESKTOP-8R5D2NM with PID 7360 (started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:33:27.869  INFO 7360 --- [main] c.b.FinalprojectTechApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:33:31.336  INFO 7360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:33:31.539  INFO 7360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:33:34.085  INFO 7360 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:33:34.289  INFO 7360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:33:35.367  INFO 7360 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:33:35.835  INFO 7360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:33:36.242  INFO 7360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:33:36.273  INFO 7360 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:33:37.960  INFO 7360 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:33:37.976  INFO 7360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:33:39.413  WARN 7360 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:33:40.413  INFO 7360 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:33:43.738  INFO 7360 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:33:43.832  INFO 7360 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17810908, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@174d5cf7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e5c8c80, org.springframework.security.web.header.HeaderWriterFilter@5ed88e31, org.springframework.web.filter.CorsFilter@597eb9ac, org.springframework.security.web.authentication.logout.LogoutFilter@aca2a0b, com.beyzayuksel.config.JwtTokenFilter@65c66fc4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cd65042, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2dc319cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a90f33d, org.springframework.security.web.session.SessionManagementFilter@1d0fc0bc, org.springframework.security.web.access.ExceptionTranslationFilter@66df362c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c8cea05]
+2022-05-31 20:33:45.504  INFO 7360 --- [main] c.b.FinalprojectTechApplicationTests     : Started FinalprojectTechApplicationTests in 18.514 seconds (JVM running for 22.648)
+2022-05-31 20:33:46.457  INFO 7360 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:33:46.457  INFO 7360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:33:46.488  INFO 7360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:35:03.911  INFO 928 --- [main] c.b.FinalprojectTechApplicationTests     : Starting FinalprojectTechApplicationTests using Java 17.0.2 on DESKTOP-8R5D2NM with PID 928 (started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:35:03.911  INFO 928 --- [main] c.b.FinalprojectTechApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:35:07.028  INFO 928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:35:07.199  INFO 928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:35:08.809  INFO 928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:35:08.949  INFO 928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:35:09.356  INFO 928 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:35:09.762  INFO 928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:35:10.074  INFO 928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:35:10.105  INFO 928 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:35:11.887  INFO 928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:35:11.902  INFO 928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:35:13.418  WARN 928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:35:14.418  INFO 928 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:35:17.464  INFO 928 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:35:17.605  INFO 928 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@518ed9b4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20e73e41, org.springframework.security.web.context.SecurityContextPersistenceFilter@55a07f97, org.springframework.security.web.header.HeaderWriterFilter@4a0f4282, org.springframework.web.filter.CorsFilter@694dc99b, org.springframework.security.web.authentication.logout.LogoutFilter@5418893c, com.beyzayuksel.config.JwtTokenFilter@6d71f296, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78e59b04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@556e4588, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a15d5f5, org.springframework.security.web.session.SessionManagementFilter@139b3a29, org.springframework.security.web.access.ExceptionTranslationFilter@6f30d0eb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f7da3a2]
+2022-05-31 20:35:19.230  INFO 928 --- [main] c.b.FinalprojectTechApplicationTests     : Started FinalprojectTechApplicationTests in 16.063 seconds (JVM running for 19.978)
+2022-05-31 20:35:20.058  INFO 928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:35:20.073  INFO 928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:35:20.089  INFO 928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:40:55.799  INFO 11848 --- [main] c.b.FinalprojectTechApplicationTests     : Starting FinalprojectTechApplicationTests using Java 17.0.2 on DESKTOP-8R5D2NM with PID 11848 (started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:40:55.802  INFO 11848 --- [main] c.b.FinalprojectTechApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:40:58.654  INFO 11848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:40:58.866  INFO 11848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:41:00.834  INFO 11848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:41:00.939  INFO 11848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:41:01.337  INFO 11848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:41:01.806  INFO 11848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:41:02.178  INFO 11848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:41:02.218  INFO 11848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:41:04.250  INFO 11848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:41:04.279  INFO 11848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:41:06.220  WARN 11848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:41:07.256  INFO 11848 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:41:12.532  INFO 11848 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:41:12.714  INFO 11848 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e781b4f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b89debc, org.springframework.security.web.context.SecurityContextPersistenceFilter@78e59b04, org.springframework.security.web.header.HeaderWriterFilter@5c1ea00, org.springframework.web.filter.CorsFilter@7305191e, org.springframework.security.web.authentication.logout.LogoutFilter@20608ef4, com.beyzayuksel.config.JwtTokenFilter@159314ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@574413bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@574e4184, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bafc754, org.springframework.security.web.session.SessionManagementFilter@74267ece, org.springframework.security.web.access.ExceptionTranslationFilter@2e564c78, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2279e7c7]
+2022-05-31 20:41:14.558  INFO 11848 --- [main] c.b.FinalprojectTechApplicationTests     : Started FinalprojectTechApplicationTests in 19.534 seconds (JVM running for 23.839)
+2022-05-31 20:41:16.837  INFO 11848 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:41:16.866  INFO 11848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:41:16.931  INFO 11848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:41:30.002  INFO 9848 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 9848 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:41:30.005  INFO 9848 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:41:30.282  INFO 9848 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:41:30.320  INFO 9848 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:41:30.321  INFO 9848 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:41:32.379  INFO 9848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:41:32.474  INFO 9848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:41:33.482  INFO 9848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-31 20:41:33.494  INFO 9848 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:41:33.495  INFO 9848 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:41:33.613  INFO 9848 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:41:33.613  INFO 9848 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3289 ms
+2022-05-31 20:41:33.796  INFO 9848 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:41:34.145  INFO 9848 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:41:34.162  INFO 9848 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:41:34.411  INFO 9848 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:41:34.475  INFO 9848 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:41:34.678  INFO 9848 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:41:34.801  INFO 9848 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:41:35.963  INFO 9848 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:41:35.992  INFO 9848 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:41:36.769  WARN 9848 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:41:37.001  INFO 9848 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:41:38.544  INFO 9848 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:41:38.587  INFO 9848 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d73f8cb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f5bd4ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@793642a8, org.springframework.security.web.header.HeaderWriterFilter@18d8bfeb, org.springframework.web.filter.CorsFilter@7f5a5633, org.springframework.security.web.authentication.logout.LogoutFilter@2dabc241, com.beyzayuksel.config.JwtTokenFilter@40aa4fac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e80f36c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@787e5e97, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@124d52d2, org.springframework.security.web.session.SessionManagementFilter@1a5e2844, org.springframework.security.web.access.ExceptionTranslationFilter@7cc779fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1697e54f]
+2022-05-31 20:41:39.169  INFO 9848 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:41:39.235  INFO 9848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/rest'
+2022-05-31 20:41:39.259  INFO 9848 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 10.086 seconds (JVM running for 12.735)
+2022-05-31 20:42:08.480  INFO 9848 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 20:42:08.481  INFO 9848 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-31 20:42:08.484  INFO 9848 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-31 20:42:08.531  INFO 9848 --- [http-nio-8081-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:42:08.532  INFO 9848 --- [http-nio-8081-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:42:12.126  INFO 9848 --- [http-nio-8081-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:42:12.127  INFO 9848 --- [http-nio-8081-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:44:59.666  INFO 9848 --- [http-nio-8081-exec-4] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:44:59.666  INFO 9848 --- [http-nio-8081-exec-4] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:45:23.018  INFO 9848 --- [http-nio-8081-exec-6] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:45:23.018  INFO 9848 --- [http-nio-8081-exec-6] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:46:19.921  INFO 9848 --- [http-nio-8081-exec-7] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:46:19.921  INFO 9848 --- [http-nio-8081-exec-7] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:46:22.237  INFO 9848 --- [http-nio-8081-exec-8] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:46:22.237  INFO 9848 --- [http-nio-8081-exec-8] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:46:31.145  INFO 9848 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:46:31.173  INFO 9848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:46:31.185  INFO 9848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:47:18.350  INFO 5488 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 5488 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:47:18.353  INFO 5488 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:47:18.459  INFO 5488 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:47:18.460  INFO 5488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:47:18.460  INFO 5488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:47:20.250  INFO 5488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:47:20.355  INFO 5488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:47:21.293  INFO 5488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-31 20:47:21.305  INFO 5488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:47:21.305  INFO 5488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:47:21.426  INFO 5488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:47:21.426  INFO 5488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2964 ms
+2022-05-31 20:47:21.605  INFO 5488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:47:21.790  INFO 5488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:47:21.802  INFO 5488 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:47:22.017  INFO 5488 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:47:22.071  INFO 5488 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:47:22.274  INFO 5488 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:47:22.405  INFO 5488 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:47:23.363  INFO 5488 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:47:23.373  INFO 5488 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:47:24.167  WARN 5488 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:47:24.421  INFO 5488 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:47:25.783  INFO 5488 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:47:25.824  INFO 5488 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1db51d4a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@381ea2ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b0c66e4, org.springframework.security.web.header.HeaderWriterFilter@22fca082, org.springframework.web.filter.CorsFilter@180e7af3, org.springframework.security.web.authentication.logout.LogoutFilter@373edc3, com.beyzayuksel.config.JwtTokenFilter@78e2ee1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1eca8cc0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6408ed3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d88e304, org.springframework.security.web.session.SessionManagementFilter@fbd86d4, org.springframework.security.web.access.ExceptionTranslationFilter@6d65c3cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a3e654f]
+2022-05-31 20:47:26.381  INFO 5488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:47:26.444  INFO 5488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/rest'
+2022-05-31 20:47:26.476  INFO 5488 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 8.881 seconds (JVM running for 11.194)
+2022-05-31 20:47:46.746  INFO 5488 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:47:46.752  INFO 5488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:47:46.760  INFO 5488 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:48:15.643  INFO 12096 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 12096 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:48:15.645  INFO 12096 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:48:15.726  INFO 12096 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:48:15.727  INFO 12096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:48:15.727  INFO 12096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:48:17.550  INFO 12096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:48:17.673  INFO 12096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:48:18.655  INFO 12096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-31 20:48:18.671  INFO 12096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:48:18.672  INFO 12096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:48:18.786  INFO 12096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:48:18.787  INFO 12096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3059 ms
+2022-05-31 20:48:18.971  INFO 12096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:48:19.159  INFO 12096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:48:19.179  INFO 12096 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:48:19.419  INFO 12096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:48:19.479  INFO 12096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:48:19.656  INFO 12096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:48:19.793  INFO 12096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:48:21.012  INFO 12096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:48:21.022  INFO 12096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:48:21.822  WARN 12096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:48:22.080  INFO 12096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:48:23.530  INFO 12096 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:48:23.578  INFO 12096 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c4f7e60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cd32f10, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fc587fd, org.springframework.security.web.header.HeaderWriterFilter@97eff56, org.springframework.web.filter.CorsFilter@87ba33, org.springframework.security.web.authentication.logout.LogoutFilter@215b0680, com.beyzayuksel.config.JwtTokenFilter@2a0bf962, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c0b56b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20874a40, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d303e3d, org.springframework.security.web.session.SessionManagementFilter@349c6b8, org.springframework.security.web.access.ExceptionTranslationFilter@1d3a2e87, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@381ea2ad]
+2022-05-31 20:48:24.182  INFO 12096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:48:24.264  INFO 12096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/rest'
+2022-05-31 20:48:24.290  INFO 12096 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 9.496 seconds (JVM running for 11.682)
+2022-05-31 20:49:27.995  INFO 12096 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:49:28.001  INFO 12096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:49:28.011  INFO 12096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:49:41.718  INFO 11212 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 11212 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:49:41.720  INFO 11212 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:49:41.798  INFO 11212 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:49:41.799  INFO 11212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:49:41.799  INFO 11212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:49:43.347  INFO 11212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:49:43.446  INFO 11212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:49:44.377  INFO 11212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-31 20:49:44.391  INFO 11212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:49:44.392  INFO 11212 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:49:44.553  INFO 11212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:49:44.553  INFO 11212 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2753 ms
+2022-05-31 20:49:44.737  INFO 11212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:49:44.915  INFO 11212 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:49:44.927  INFO 11212 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:49:45.150  INFO 11212 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:49:45.203  INFO 11212 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:49:45.532  INFO 11212 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:49:45.715  INFO 11212 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:49:46.878  INFO 11212 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:49:46.891  INFO 11212 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:49:47.734  WARN 11212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:49:47.970  INFO 11212 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:49:49.555  INFO 11212 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:49:49.598  INFO 11212 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b5eb37d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2647fc69, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b427840, org.springframework.security.web.header.HeaderWriterFilter@379a357e, org.springframework.web.filter.CorsFilter@7ab23db6, org.springframework.security.web.authentication.logout.LogoutFilter@34244e35, com.beyzayuksel.config.JwtTokenFilter@7ff534fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@221b0a0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@274cc144, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@511eb522, org.springframework.security.web.session.SessionManagementFilter@6cef0ffa, org.springframework.security.web.access.ExceptionTranslationFilter@65219e36, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d80fed6]
+2022-05-31 20:49:50.415  INFO 11212 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:49:50.484  INFO 11212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/rest'
+2022-05-31 20:49:50.509  INFO 11212 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 9.508 seconds (JVM running for 11.581)
+2022-05-31 20:50:14.684  INFO 11212 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 20:50:14.686  INFO 11212 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-31 20:50:14.689  INFO 11212 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-31 20:50:14.769  INFO 11212 --- [http-nio-8081-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:50:14.797  INFO 11212 --- [http-nio-8081-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:51:06.425  INFO 11212 --- [http-nio-8081-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:51:06.426  INFO 11212 --- [http-nio-8081-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:52:19.414  INFO 11212 --- [http-nio-8081-exec-4] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:52:19.414  INFO 11212 --- [http-nio-8081-exec-4] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:53:19.288  INFO 11212 --- [http-nio-8081-exec-5] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:53:19.289  INFO 11212 --- [http-nio-8081-exec-5] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:53:52.538  INFO 11212 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:53:52.544  INFO 11212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:53:52.552  INFO 11212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:54:01.259  INFO 12092 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 12092 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:54:01.262  INFO 12092 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:54:01.360  INFO 12092 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:54:01.361  INFO 12092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:54:01.361  INFO 12092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:54:03.723  INFO 12092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:54:03.839  INFO 12092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:54:04.783  INFO 12092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-31 20:54:04.793  INFO 12092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:54:04.794  INFO 12092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:54:04.925  INFO 12092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:54:04.926  INFO 12092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3564 ms
+2022-05-31 20:54:05.154  INFO 12092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:54:05.362  INFO 12092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:54:05.378  INFO 12092 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:54:05.609  INFO 12092 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:54:05.665  INFO 12092 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:54:05.901  INFO 12092 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:54:06.061  INFO 12092 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:54:07.525  INFO 12092 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:54:07.537  INFO 12092 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:54:08.419  WARN 12092 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:54:08.681  INFO 12092 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:54:10.095  INFO 12092 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:54:10.137  INFO 12092 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@752dc0a6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f8e5eea, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b039925, org.springframework.security.web.header.HeaderWriterFilter@fbd86d4, org.springframework.web.filter.CorsFilter@34af8d68, org.springframework.security.web.authentication.logout.LogoutFilter@6daa57ca, com.beyzayuksel.config.JwtTokenFilter@7020499b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f5f5c9a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5891d9e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b138fc9, org.springframework.security.web.session.SessionManagementFilter@22c5294c, org.springframework.security.web.access.ExceptionTranslationFilter@6abef2e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1aa86102]
+2022-05-31 20:54:10.685  INFO 12092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:54:10.746  INFO 12092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/rest'
+2022-05-31 20:54:10.770  INFO 12092 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 10.344 seconds (JVM running for 12.838)
+2022-05-31 20:54:11.511  INFO 12092 --- [RMI TCP Connection(2)-192.168.0.18] o.a.c.c.C.[Tomcat].[localhost].[/rest]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 20:54:11.512  INFO 12092 --- [RMI TCP Connection(2)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-31 20:54:11.515  INFO 12092 --- [RMI TCP Connection(2)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-31 20:55:04.989  INFO 12092 --- [http-nio-8081-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:55:04.990  INFO 12092 --- [http-nio-8081-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:56:20.073  INFO 12092 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:56:20.079  INFO 12092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:56:20.087  INFO 12092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:56:27.209  INFO 11076 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 11076 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:56:27.211  INFO 11076 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:56:27.287  INFO 11076 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:56:27.287  INFO 11076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:56:27.287  INFO 11076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:56:28.871  INFO 11076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:56:28.976  INFO 11076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:56:29.832  INFO 11076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-31 20:56:29.841  INFO 11076 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:56:29.842  INFO 11076 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:56:29.951  INFO 11076 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:56:29.951  INFO 11076 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2663 ms
+2022-05-31 20:56:30.167  INFO 11076 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:56:30.349  INFO 11076 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:56:30.363  INFO 11076 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:56:30.608  INFO 11076 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:56:30.663  INFO 11076 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:56:30.845  INFO 11076 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:56:30.970  INFO 11076 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:56:31.854  INFO 11076 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:56:31.864  INFO 11076 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:56:32.628  WARN 11076 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:56:32.829  INFO 11076 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:56:34.109  INFO 11076 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:56:34.153  INFO 11076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a8d9996, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12c56e6c, org.springframework.security.web.context.SecurityContextPersistenceFilter@238e5baf, org.springframework.security.web.header.HeaderWriterFilter@3cd14c24, org.springframework.web.filter.CorsFilter@5c62e142, org.springframework.security.web.authentication.logout.LogoutFilter@1c32a99f, com.beyzayuksel.config.JwtTokenFilter@2061ab99, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@533e1f0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@711948f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6666d72a, org.springframework.security.web.session.SessionManagementFilter@1f45a230, org.springframework.security.web.access.ExceptionTranslationFilter@2dcf5a7f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5cdd4f6c]
+2022-05-31 20:56:34.717  INFO 11076 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:56:34.784  INFO 11076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-31 20:56:34.808  INFO 11076 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 8.356 seconds (JVM running for 10.416)
+2022-05-31 20:56:50.960  INFO 11076 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 20:56:50.961  INFO 11076 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-31 20:56:50.963  INFO 11076 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-31 20:56:51.012  INFO 11076 --- [http-nio-8081-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:56:51.013  INFO 11076 --- [http-nio-8081-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:57:21.458  INFO 11076 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:57:21.466  INFO 11076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:57:21.475  INFO 11076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:57:57.091  INFO 10444 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 10444 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:57:57.094  INFO 10444 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:57:57.179  INFO 10444 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:57:57.179  INFO 10444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:57:57.179  INFO 10444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:57:59.110  INFO 10444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:57:59.206  INFO 10444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:58:00.641  INFO 10444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-31 20:58:00.653  INFO 10444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:58:00.654  INFO 10444 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:58:00.812  INFO 10444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:58:00.813  INFO 10444 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3633 ms
+2022-05-31 20:58:01.068  INFO 10444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:58:01.256  INFO 10444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:58:01.268  INFO 10444 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:58:01.565  INFO 10444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:58:01.667  INFO 10444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:58:01.993  INFO 10444 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:58:02.302  INFO 10444 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:58:03.404  INFO 10444 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:58:03.415  INFO 10444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:58:04.191  WARN 10444 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:58:04.391  INFO 10444 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:58:05.777  INFO 10444 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:58:05.817  INFO 10444 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@639b002b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63c4f1ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@66b32f0e, org.springframework.security.web.header.HeaderWriterFilter@2b039925, org.springframework.web.filter.CorsFilter@752dc0a6, org.springframework.security.web.authentication.logout.LogoutFilter@787e5e97, com.beyzayuksel.config.JwtTokenFilter@f8e5eea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a699a8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@215b0680, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34af8d68, org.springframework.security.web.session.SessionManagementFilter@5ad899f0, org.springframework.security.web.access.ExceptionTranslationFilter@27317429, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c1d68e6]
+2022-05-31 20:58:06.338  INFO 10444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:58:06.399  INFO 10444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-31 20:58:06.424  INFO 10444 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 10.198 seconds (JVM running for 12.837)
+2022-05-31 20:58:06.696  INFO 10444 --- [RMI TCP Connection(2)-192.168.0.18] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 20:58:06.697  INFO 10444 --- [RMI TCP Connection(2)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-31 20:58:06.700  INFO 10444 --- [RMI TCP Connection(2)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-31 20:58:24.139  INFO 10444 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:58:24.139  INFO 10444 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:58:24.596  INFO 10444 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:58:24.596  INFO 10444 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:59:11.186  INFO 10444 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:59:11.187  INFO 10444 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:59:18.822  INFO 10444 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:59:18.822  INFO 10444 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:59:21.230  INFO 10444 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:59:21.230  INFO 10444 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:59:33.742  INFO 10444 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:59:33.805  INFO 10444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 20:59:33.867  INFO 10444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 20:59:41.887  INFO 8216 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 8216 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 20:59:41.887  INFO 8216 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 20:59:41.961  INFO 8216 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 20:59:41.961  INFO 8216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 20:59:41.961  INFO 8216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 20:59:43.539  INFO 8216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 20:59:43.632  INFO 8216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+2022-05-31 20:59:44.523  INFO 8216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-31 20:59:44.538  INFO 8216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 20:59:44.538  INFO 8216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 20:59:44.663  INFO 8216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-31 20:59:44.663  INFO 8216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2702 ms
+2022-05-31 20:59:44.820  INFO 8216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 20:59:44.992  INFO 8216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 20:59:45.007  INFO 8216 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 20:59:45.219  INFO 8216 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 20:59:45.281  INFO 8216 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 20:59:45.469  INFO 8216 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 20:59:45.578  INFO 8216 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 20:59:46.437  INFO 8216 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 20:59:46.453  INFO 8216 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 20:59:47.187  WARN 8216 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 20:59:47.406  INFO 8216 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 20:59:48.697  INFO 8216 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 20:59:48.744  INFO 8216 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ff51358, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70d28d1b, org.springframework.security.web.context.SecurityContextPersistenceFilter@538f5808, org.springframework.security.web.header.HeaderWriterFilter@fe54013, org.springframework.web.filter.CorsFilter@5f475f51, org.springframework.security.web.authentication.logout.LogoutFilter@7b074fb7, com.beyzayuksel.config.JwtTokenFilter@11b9a5b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@403a2e78, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ed0b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16510b0c, org.springframework.security.web.session.SessionManagementFilter@4a3cba78, org.springframework.security.web.access.ExceptionTranslationFilter@2f3f370b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62a9d3fe]
+2022-05-31 20:59:49.306  INFO 8216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 20:59:49.368  INFO 8216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-31 20:59:49.400  INFO 8216 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 8.204 seconds (JVM running for 10.361)
+2022-05-31 20:59:50.041  INFO 8216 --- [RMI TCP Connection(3)-192.168.0.18] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 20:59:50.041  INFO 8216 --- [RMI TCP Connection(3)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-31 20:59:50.041  INFO 8216 --- [RMI TCP Connection(3)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-31 20:59:56.080  INFO 8216 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:59:56.081  INFO 8216 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:59:57.158  INFO 8216 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:59:57.159  INFO 8216 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 20:59:58.694  INFO 8216 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 20:59:58.694  INFO 8216 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:03:17.984  INFO 8216 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:03:17.985  INFO 8216 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:03:18.418  INFO 8216 --- [http-nio-8080-exec-6] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:03:18.418  INFO 8216 --- [http-nio-8080-exec-6] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:03:44.788  INFO 8216 --- [http-nio-8080-exec-7] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:03:44.789  INFO 8216 --- [http-nio-8080-exec-7] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:03:45.018  INFO 8216 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:03:45.019  INFO 8216 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:03:50.343  INFO 8216 --- [http-nio-8080-exec-9] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:03:50.343  INFO 8216 --- [http-nio-8080-exec-9] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:03:50.562  INFO 8216 --- [http-nio-8080-exec-10] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:03:50.562  INFO 8216 --- [http-nio-8080-exec-10] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:04:34.588  INFO 8216 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:04:34.589  INFO 8216 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:04:34.847  INFO 8216 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:04:34.848  INFO 8216 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:04:56.113  INFO 8216 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:04:56.113  INFO 8216 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:04:56.476  INFO 8216 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:04:56.477  INFO 8216 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:09:26.673  INFO 8216 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:09:26.673  INFO 8216 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:09:28.016  INFO 8216 --- [http-nio-8080-exec-9] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:09:28.017  INFO 8216 --- [http-nio-8080-exec-9] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:10:22.600  INFO 8216 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 21:10:22.600  INFO 8216 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 21:10:22.616  INFO 8216 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 21:10:34.923  INFO 11676 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 11676 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 21:10:34.923  INFO 11676 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 21:10:35.011  INFO 11676 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 21:10:35.011  INFO 11676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 21:10:35.011  INFO 11676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 21:10:36.643  INFO 11676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 21:10:36.785  INFO 11676 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 3 JPA repository interfaces.
+2022-05-31 21:10:37.788  INFO 11676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-31 21:10:37.804  INFO 11676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 21:10:37.804  INFO 11676 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 21:10:37.929  INFO 11676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-31 21:10:37.929  INFO 11676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2918 ms
+2022-05-31 21:10:38.134  INFO 11676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 21:10:38.305  INFO 11676 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 21:10:38.321  INFO 11676 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 21:10:38.523  INFO 11676 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 21:10:38.570  INFO 11676 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 21:10:38.742  INFO 11676 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 21:10:38.867  INFO 11676 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 21:10:39.742  INFO 11676 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 21:10:39.758  INFO 11676 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 21:10:40.476  WARN 11676 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 21:10:40.664  INFO 11676 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 21:10:41.897  INFO 11676 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 21:10:41.944  INFO 11676 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41058685, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6264c52f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1202687a, org.springframework.security.web.header.HeaderWriterFilter@df7db8, org.springframework.web.filter.CorsFilter@6b0abfc5, org.springframework.security.web.authentication.logout.LogoutFilter@5e5a8246, com.beyzayuksel.config.JwtTokenFilter@740428e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ed2a355, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f8e79d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a1cdd4d, org.springframework.security.web.session.SessionManagementFilter@79e6f36a, org.springframework.security.web.access.ExceptionTranslationFilter@641f7d5a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58e0711d]
+2022-05-31 21:10:42.428  INFO 11676 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 21:10:42.491  INFO 11676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-31 21:10:42.522  INFO 11676 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 8.466 seconds (JVM running for 10.824)
+2022-05-31 21:10:42.834  INFO 11676 --- [RMI TCP Connection(3)-192.168.0.18] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 21:10:42.834  INFO 11676 --- [RMI TCP Connection(3)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-31 21:10:42.834  INFO 11676 --- [RMI TCP Connection(3)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-31 21:10:45.918  INFO 11676 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:10:45.919  INFO 11676 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:10:48.194  INFO 11676 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:10:48.194  INFO 11676 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:10:54.314  INFO 11676 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:10:54.315  INFO 11676 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:10:54.624  INFO 11676 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:10:54.625  INFO 11676 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:10:57.719  INFO 11676 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:10:57.720  INFO 11676 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:10:57.958  INFO 11676 --- [http-nio-8080-exec-6] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:10:57.959  INFO 11676 --- [http-nio-8080-exec-6] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:11:00.582  INFO 11676 --- [http-nio-8080-exec-7] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:11:00.583  INFO 11676 --- [http-nio-8080-exec-7] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:11:00.753  INFO 11676 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:11:00.754  INFO 11676 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:12:01.390  INFO 11676 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:12:01.390  INFO 11676 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:12:24.509  INFO 11676 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:12:24.510  INFO 11676 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:12:24.935  INFO 11676 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:12:24.935  INFO 11676 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:13:04.188  INFO 11676 --- [http-nio-8080-exec-6] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:13:04.188  INFO 11676 --- [http-nio-8080-exec-6] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:13:04.452  INFO 11676 --- [http-nio-8080-exec-7] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:13:04.453  INFO 11676 --- [http-nio-8080-exec-7] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:13:09.119  INFO 11676 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:13:09.120  INFO 11676 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:13:09.307  INFO 11676 --- [http-nio-8080-exec-9] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:13:09.307  INFO 11676 --- [http-nio-8080-exec-9] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:13:12.219  INFO 11676 --- [http-nio-8080-exec-10] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:13:12.220  INFO 11676 --- [http-nio-8080-exec-10] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:13:12.440  INFO 11676 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:13:12.441  INFO 11676 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:14:45.809  INFO 11676 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 21:14:45.809  INFO 11676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 21:14:45.824  INFO 11676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-31 21:14:56.585  INFO 9508 --- [restartedMain] c.b.FinalprojectTechApplication          : Starting FinalprojectTechApplication using Java 17.0.2 on DESKTOP-8R5D2NM with PID 9508 (C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech\target\classes started by BEYZA in C:\Users\BEYZA\eclipse-workspace\SpringBootProjects\finalproject_tech)
+2022-05-31 21:14:56.585  INFO 9508 --- [restartedMain] c.b.FinalprojectTechApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-05-31 21:14:56.668  INFO 9508 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\BEYZA\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.12\jaxb-impl-2.1.12.jar referenced one or more files that do not exist: file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb-api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/activation.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jsr173_1.0_api.jar,file:/C:/Users/BEYZA/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.12/jaxb1-impl.jar
+2022-05-31 21:14:56.668  INFO 9508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-31 21:14:56.668  INFO 9508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-31 21:14:58.443  INFO 9508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-31 21:14:58.537  INFO 9508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 3 JPA repository interfaces.
+2022-05-31 21:14:59.490  INFO 9508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-31 21:14:59.506  INFO 9508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-31 21:14:59.506  INFO 9508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 21:14:59.631  INFO 9508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-31 21:14:59.631  INFO 9508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2963 ms
+2022-05-31 21:14:59.803  INFO 9508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-31 21:14:59.974  INFO 9508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-31 21:14:59.974  INFO 9508 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/finalproject_tech?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false'
+2022-05-31 21:15:00.209  INFO 9508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-31 21:15:00.256  INFO 9508 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-31 21:15:00.459  INFO 9508 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-31 21:15:00.599  INFO 9508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-05-31 21:15:01.584  INFO 9508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-31 21:15:01.599  INFO 9508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 21:15:02.400  WARN 9508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-31 21:15:02.665  INFO 9508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-31 21:15:04.028  INFO 9508 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-31 21:15:04.060  INFO 9508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@514e95ee, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4688884d, org.springframework.security.web.context.SecurityContextPersistenceFilter@331fb3e7, org.springframework.security.web.header.HeaderWriterFilter@3c719715, org.springframework.web.filter.CorsFilter@18c6f5c3, org.springframework.security.web.authentication.logout.LogoutFilter@45f65ac5, com.beyzayuksel.config.JwtTokenFilter@6ba1a12c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b0ea188, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e9c11f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e65b853, org.springframework.security.web.session.SessionManagementFilter@1c1d9c, org.springframework.security.web.access.ExceptionTranslationFilter@56fccf4f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43157930]
+2022-05-31 21:15:04.591  INFO 9508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-31 21:15:04.638  INFO 9508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-31 21:15:04.669  INFO 9508 --- [restartedMain] c.b.FinalprojectTechApplication          : Started FinalprojectTechApplication in 8.767 seconds (JVM running for 11.07)
+2022-05-31 21:15:05.382  INFO 9508 --- [RMI TCP Connection(5)-192.168.0.18] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 21:15:05.382  INFO 9508 --- [RMI TCP Connection(5)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-31 21:15:05.382  INFO 9508 --- [RMI TCP Connection(5)-192.168.0.18] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-31 21:15:20.614  INFO 9508 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:15:20.615  INFO 9508 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:15:23.063  INFO 9508 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:15:23.063  INFO 9508 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:15:26.190  INFO 9508 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:15:26.190  INFO 9508 --- [http-nio-8080-exec-4] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:15:27.410  INFO 9508 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:15:27.411  INFO 9508 --- [http-nio-8080-exec-5] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:15:39.286  INFO 9508 --- [http-nio-8080-exec-6] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:15:39.286  INFO 9508 --- [http-nio-8080-exec-6] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:17:46.345  INFO 9508 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:17:46.346  INFO 9508 --- [http-nio-8080-exec-8] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:20:49.151  INFO 9508 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:20:49.154  INFO 9508 --- [http-nio-8080-exec-1] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:21:11.015  INFO 9508 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:21:11.016  INFO 9508 --- [http-nio-8080-exec-2] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:21:11.363  INFO 9508 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : JwtTokenFilter : doFilterInternal
+2022-05-31 21:21:11.364  INFO 9508 --- [http-nio-8080-exec-3] com.beyzayuksel.config.JwtTokenFilter    : first time so creating token using UserResourceImpl - authenticate method
+2022-05-31 21:25:02.030  INFO 9508 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-31 21:25:02.030  INFO 9508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-31 21:25:02.046  INFO 9508 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

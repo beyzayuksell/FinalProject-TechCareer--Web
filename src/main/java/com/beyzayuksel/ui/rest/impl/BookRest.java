@@ -20,13 +20,13 @@ public class BookRest implements IBookRest {
     @Autowired
     BookServices bookServices;
 
-    //ROOT
-    //http://localhost:8080/api/v1
-    //http://localhost:8080/api/v1/index
-    @GetMapping({"/", "/index"})
-    public String getRoot() {
-        return "index";
-    }
+//    //ROOT
+//    //http://localhost:8080/api/v1
+//    //http://localhost:8080/api/v1/index
+//    @GetMapping({"/", "/index"})
+//    public String getRoot() {
+//        return "index";
+//    }
 
     // SAVE
     // http://localhost:8080/api/v1/books
@@ -51,7 +51,7 @@ public class BookRest implements IBookRest {
     @Override
     @GetMapping("/books/{id}")
     public ResponseEntity<BookDto> getBookById(@PathVariable(name = "id") Long id) throws Throwable {
-        ResponseEntity<BookDto> entity=bookServices.getBookById(id);
+        ResponseEntity<BookDto> entity = bookServices.getBookById(id);
         return entity;
     }
 
