@@ -42,11 +42,10 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.cors();
       http.csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
 		.authorizeRequests()
-				.antMatchers("/api/v1/books").permitAll()
-				.antMatchers("/api/v1/books/{id}").permitAll()
-				.antMatchers("/user/**").permitAll()
+			.antMatchers("/api/v1/books/**").permitAll()
+			  .antMatchers("/user/**").permitAll()
 			  .antMatchers("/api/v1/students/**").permitAll()
-			  .antMatchers("/beyzayuksel/**").permitAll()
+			  .antMatchers("/index**" ,"/beyzayuksel/**").permitAll()
 	//			.antMatchers("/user/register").permitAll()
 		.anyRequest().authenticated();
 
