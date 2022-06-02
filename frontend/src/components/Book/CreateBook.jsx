@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BookService from "../services/BookService";
+import BookService from "../../services/BookService";
 import { Card, Form, Button } from "react-bootstrap";
 
 class UpdateBook extends Component {

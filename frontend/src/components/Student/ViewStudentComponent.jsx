@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import StudentService from "../services/StudentService";
+import StudentService from "../../services/StudentService";
 
 export default class ViewStudentComponent extends Component {
   constructor(props) {

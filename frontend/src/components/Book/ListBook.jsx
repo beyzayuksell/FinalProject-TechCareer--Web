@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import BookService from "../services/BookService";
+
+import BookService from "../../services/BookService";
 import { Table, Button, ButtonGroup, Form, FormControl } from "react-bootstrap";
 
 class ListBook extends Component {
@@ -52,17 +53,6 @@ class ListBook extends Component {
   render() {
     return (
       <div>
-        <Form className="d-flex">
-          <FormControl
-            type="search"
-            placeholder="Bulmak İstediğiniz Kitabı Giriniz"
-            className="me-2"
-            aria-label="Search"
-          />
-          <Button>
-            <i className="fa-solid fa-search"></i>
-          </Button>
-        </Form>
         <br />
         <Table striped bordered hover variant="dark">
           <thead>

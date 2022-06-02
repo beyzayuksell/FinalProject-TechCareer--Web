@@ -8,7 +8,7 @@ import {
   faLock,
   faUndo,
 } from "@fortawesome/free-solid-svg-icons";
-import { authenticateUser } from "../../services";
+import { authenticateUser } from "../../services/index";
 
 const Login = (props) => {
   const [error, setError] = useState();
@@ -38,7 +38,7 @@ const Login = (props) => {
         console.log(error.message);
         setShow(true);
         resetLoginForm();
-        setError("Invalid email and password");
+        setError("Geçersiz mail adresi ve şifre");
       });
   };
 

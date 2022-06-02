@@ -10,7 +10,7 @@ import {
   faPhone,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { registerUser } from "../../services";
+import { registerUser } from "../../services/index";
 import MyToast from "../MyToast";
 
 const Register = (props) => {

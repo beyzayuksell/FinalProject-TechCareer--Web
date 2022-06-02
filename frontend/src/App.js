@@ -6,20 +6,20 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import Header from "./components/Header";
 import Home from "./components/Home";
-import ListBook from "./components/ListBook";
-import CreateBook from "./components/CreateBook";
-import ViewBook from "./components/ViewBook";
-import UpdateBook from "./components/UpdateBook";
 import Footer from "./components/Footer";
 
-import CreateStudentComponent from "./components/CreateStudentComponent";
-import ListStudentComponent from "./components/ListStudentComponent";
-import ViewStudentComponent from "./components/ViewStudentComponent";
-import UpdateStudentComponent from "./components/UpdateStudentComponent";
+import ListBook from "./components/Book/ListBook";
+import CreateBook from "./components/Book/CreateBook";
+import ViewBook from "./components/Book/ViewBook";
+import UpdateBook from "./components/Book/UpdateBook";
+
+import CreateStudentComponent from "./components/Student/CreateStudentComponent";
+import ListStudentComponent from "./components/Student/ListStudentComponent";
+import ViewStudentComponent from "./components/Student/ViewStudentComponent";
+import UpdateStudentComponent from "./components/Student/UpdateStudentComponent";
 
 import Login from "./components/User/Login";
 import Register from "./components/User/Register";
-import UserList from "./components/User/UserList";
 
 // non-stateless:durumsuz yani bir yere değer döndermeyen:void
 const App = () => {
@@ -42,6 +42,8 @@ const App = () => {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/home" exact component={Home} />
+              <Route path="/add-book/home" component={Home}></Route>
+
               <Route path="/students" component={ListStudentComponent}></Route>
               <Route
                 path="/view-student/:id"
